@@ -5,12 +5,10 @@
 }
 
 :root {
-  --bg-primary: hsl(231, 69%, 60%);
-  --bg-secondary: hsl(0, 94%, 66%);
-  --bg-dark: hsl(229, 31%, 21%);
-
-  --clr-primary: hsl(229, 8%, 60%);
-  --clr-secondary: hsl(229, 31%, 21%);
+  --clr-primary: hsl(0, 94%, 66%);
+  --clr-neutral: hsl(229, 8%, 60%);
+  --clr-light: hsl(231, 69%, 60%);
+  --clr-dark: hsl(229, 31%, 21%);
 }
 
 /* base styles */
@@ -19,7 +17,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--clr-primary);
+  color: var(--clr-neutral);
 }
 
 img {
@@ -32,6 +30,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 .btn {
@@ -39,17 +38,25 @@ a {
   border-radius: 5px;
   padding: 0.5em 1.5em;
   color: white;
+  display: inline-block;
 }
 
 .btn-primary {
-  background-color: var(--bg-primary);
+  background-color: var(--clr-light);
 }
 
 .btn-secondary {
-  background-color: var(--bg-secondary);
+  background-color: var(--clr-primary);
 }
 
 /* typography */
+h1,
+h2,
+h3,
+p {
+  margin: 1rem 0;
+}
+
 h1 {
   font-size: 3rem;
 }
@@ -71,13 +78,12 @@ h2,
 h3 {
   line-height: 1.1;
   font-weight: 500;
-  color: var(--clr-secondary);
-  margin: 1rem 0;
+  color: var(--clr-dark);
 }
 
 .question {
   font-weight: 500;
-  color: var(--clr-secondary);
+  color: var(--clr-dark);
 }
 
 /* layout */
@@ -89,9 +95,42 @@ section {
   padding: 2em 0;
 }
 
+/* header */
+header {
+  background-color: var(--clr-dark);
+}
+
 /* main */
+/* features */
+.features {
+  overflow: hidden;
+}
+
+.slides {
+  display: inline-flex;
+  overflow: hidden;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+  cursor: grab;
+}
+
+.slide {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  overflow: hidden;
+  user-select: text;
+}
+
+.slide__img {
+  transition: transform 0.3s ease-in-out;
+}
+
 .contact {
-  background-color: var(--bg-primary);
+  background-color: var(--clr-light);
   color: white;
   text-align: center;
 }
@@ -107,7 +146,7 @@ section {
 /* footer */
 footer {
   padding: 2em 0;
-  background-color: var(--bg-dark);
+  background-color: var(--clr-dark);
 }
 
 .attribution {
