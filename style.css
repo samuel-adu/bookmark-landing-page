@@ -5,19 +5,19 @@
 }
 
 :root {
-  --clr-primary: hsl(0, 94%, 66%);
-  --clr-neutral: hsl(229, 8%, 60%);
-  --clr-light: hsl(231, 69%, 60%);
-  --clr-dark: hsl(229, 31%, 21%);
+  --bg-primary: hsl(231, 69%, 60%);
+  --bg-secondary: hsl(0, 94%, 66%);
+  --clr-body: hsl(229, 8%, 60%);
+  --clr-heading: hsl(229, 31%, 21%);
 }
 
-/* base styles */
+/* || base styles ======================================================*/
 body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--clr-neutral);
+  color: var(--clr-body);
 }
 
 img {
@@ -33,23 +33,11 @@ a {
   color: white;
 }
 
-.btn {
-  font-size: 12px;
-  border-radius: 5px;
-  padding: 0.5em 1.5em;
-  color: white;
-  display: inline-block;
+button {
+  border: 0;
 }
 
-.btn-primary {
-  background-color: var(--clr-light);
-}
-
-.btn-secondary {
-  background-color: var(--clr-primary);
-}
-
-/* typography */
+/* || typography =================================================*/
 h1,
 h2,
 h3,
@@ -57,82 +45,143 @@ p {
   margin: 1rem 0;
 }
 
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1rem;
-}
-
 h1,
 h2,
 h3 {
   line-height: 1.1;
   font-weight: 500;
-  color: var(--clr-dark);
+  color: var(--clr-heading);
 }
 
-.question {
-  font-weight: 500;
-  color: var(--clr-dark);
+h1 {
+  font-size: 1.75rem;
 }
 
-/* layout */
+h2 {
+  font-size: 1.5rem;
+}
+
+/* || utilities =========================================================== */
 .container {
-  padding: 0 1em;
+  padding-inline: 2rem;
+}
+
+.btn {
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  color: white;
+  display: inline-block;
+  background-color: var(--clr-body);
+}
+
+input {
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: var(--bg-primary);
+}
+
+.btn-secondary {
+  background-color: var(--bg-secondary);
 }
 
 section {
-  padding: 2em 0;
+  padding-block: 2rem;
 }
 
-/* header */
-header {
-  background-color: var(--clr-dark);
+/* || Hero =================================================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 2rem;
 }
 
-/* main */
-/* features */
+.nav {
+  display: none;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero p {
+  font-size: 1rem;
+}
+
 .features {
-  overflow: hidden;
+  text-align: center;
 }
 
-.slides {
-  display: inline-flex;
-  overflow: hidden;
-  transform: translateX(0);
-  transition: transform 0.3s ease-out;
-  cursor: grab;
+.features p {
+  font-size: 0.9375rem;
 }
 
 .slide {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1em;
-  overflow: hidden;
-  user-select: text;
+  padding-block: 2rem;
+  margin-bottom: 1rem;
 }
 
-.slide__img {
-  transition: transform 0.3s ease-in-out;
+.slide-control {
+  font-size: 1rem;
+}
+
+.slide-btn {
+  display: none;
+}
+
+.download {
+  text-align: center;
+}
+
+.download p {
+  font-size: 0.9375rem;
+}
+
+.download .card {
+  padding-top: 2rem;
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid black;
+}
+
+.download .btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.faq {
+  text-align: center;
+}
+
+.faq p {
+  font-size: 0.9375rem;
+}
+
+.q-and-a {
+  text-align: left;
+}
+
+.question {
+  font-size: 1rem;
+  color: var(--clr-heading);
+}
+
+.answer {
+  font-size: 0.875rem;
 }
 
 .contact {
-  background-color: var(--clr-light);
+  background-color: var(--bg-primary);
   color: white;
   text-align: center;
+  padding-block: 5rem;
 }
 
 .contact p {
@@ -143,16 +192,28 @@ header {
   color: white;
 }
 
-/* footer */
-footer {
-  padding: 2em 0;
-  background-color: var(--clr-dark);
+.contact .btn {
+  width: 100%;
 }
 
-.attribution {
-  font-size: 11px;
+footer {
   text-align: center;
+  padding: 2em 0;
+  background-color: var(--clr-heading);
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+.footer-logo {
+  fill: aqua;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+footer li {
+  margin-block: 1rem;
+  font-size: 0.875rem;
 }
