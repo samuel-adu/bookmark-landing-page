@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: hsl(231, 69%, 60%);
+  --secondary: hsl(0, 94%, 66%);
+  --neutral: hsl(229, 31%, 21%);
+}
+
+@layer base {
+  html {
+    font-family: "Rubik", sans-serif;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+summary {
+  list-style: none;
+  position: relative;
+}
+
+summary:hover {
+  cursor: pointer;
+  color: hsl(0, 94%, 66%);
+}
+
+details:last-of-type summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] svg {
+  rotate: 180deg;
+}
+
+details[open] path {
+  stroke: hsl(0, 94%, 66%);
+}
+
+.tab-link {
+  position: relative;
+}
+
+.tab-link::after {
+  content: "";
+  height: 4px;
+  width: 40%;
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--secondary);
+  opacity: 0;
+}
+
+.tab-link.active {
+  opacity: 1;
+}
+
+.tab-link.active::after {
+  opacity: 1;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@media (min-width: 48em) {
+  .tab-link::after {
+    width: 100%;
+  }
+}
