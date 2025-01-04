@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -836,22 +836,22 @@ html {
 
 .border-gray-100 {
   --tw-border-opacity: 1;
-  border-color: rgb(243 244 246 / var(--tw-border-opacity));
+  border-color: rgb(243 244 246 / var(--tw-border-opacity, 1));
 }
 
 .border-primary {
   --tw-border-opacity: 1;
-  border-color: rgb(82 103 223 / var(--tw-border-opacity));
+  border-color: rgb(82 103 223 / var(--tw-border-opacity, 1));
 }
 
 .border-secondary {
   --tw-border-opacity: 1;
-  border-color: rgb(250 89 89 / var(--tw-border-opacity));
+  border-color: rgb(250 89 89 / var(--tw-border-opacity, 1));
 }
 
 .border-white {
   --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
 .border-white\/15 {
@@ -860,22 +860,22 @@ html {
 
 .bg-gray-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
 .bg-neutral {
   --tw-bg-opacity: 1;
-  background-color: rgb(36 42 69 / var(--tw-bg-opacity));
+  background-color: rgb(36 42 69 / var(--tw-bg-opacity, 1));
 }
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(82 103 223 / var(--tw-bg-opacity));
+  background-color: rgb(82 103 223 / var(--tw-bg-opacity, 1));
 }
 
 .bg-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(250 89 89 / var(--tw-bg-opacity));
+  background-color: rgb(250 89 89 / var(--tw-bg-opacity, 1));
 }
 
 .object-cover {
@@ -1015,12 +1015,12 @@ html {
 
 .text-neutral {
   --tw-text-opacity: 1;
-  color: rgb(36 42 69 / var(--tw-text-opacity));
+  color: rgb(36 42 69 / var(--tw-text-opacity, 1));
 }
 
 .text-white {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .no-underline {
@@ -1029,12 +1029,12 @@ html {
 
 .placeholder-slate-400::-moz-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgb(148 163 184 / var(--tw-placeholder-opacity));
+  color: rgb(148 163 184 / var(--tw-placeholder-opacity, 1));
 }
 
 .placeholder-slate-400::placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgb(148 163 184 / var(--tw-placeholder-opacity));
+  color: rgb(148 163 184 / var(--tw-placeholder-opacity, 1));
 }
 
 .opacity-50 {
@@ -1089,9 +1089,9 @@ img {
   max-width: 100%;
 }
 
-/* details:last-of-type summary::-webkit-details-marker {
+details:last-of-type summary::-webkit-details-marker {
   display: none;
-} */
+}
 
 .tab-link.active {
   opacity: 1;
@@ -1153,7 +1153,7 @@ img {
 .after\:bg-secondary::after {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-  background-color: rgb(250 89 89 / var(--tw-bg-opacity));
+  background-color: rgb(250 89 89 / var(--tw-bg-opacity, 1));
 }
 
 .after\:opacity-0::after {
@@ -1163,62 +1163,62 @@ img {
 
 .invalid\:border-secondary:invalid {
   --tw-border-opacity: 1;
-  border-color: rgb(250 89 89 / var(--tw-border-opacity));
+  border-color: rgb(250 89 89 / var(--tw-border-opacity, 1));
 }
 
 .invalid\:text-secondary:invalid {
   --tw-text-opacity: 1;
-  color: rgb(250 89 89 / var(--tw-text-opacity));
+  color: rgb(250 89 89 / var(--tw-text-opacity, 1));
 }
 
 .hover\:border-neutral:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(36 42 69 / var(--tw-border-opacity));
+  border-color: rgb(36 42 69 / var(--tw-border-opacity, 1));
 }
 
 .hover\:border-secondary:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(250 89 89 / var(--tw-border-opacity));
+  border-color: rgb(250 89 89 / var(--tw-border-opacity, 1));
 }
 
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
-  color: rgb(82 103 223 / var(--tw-text-opacity));
+  color: rgb(82 103 223 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-secondary:hover {
   --tw-text-opacity: 1;
-  color: rgb(250 89 89 / var(--tw-text-opacity));
+  color: rgb(250 89 89 / var(--tw-text-opacity, 1));
 }
 
 .focus\:border-neutral:focus {
   --tw-border-opacity: 1;
-  border-color: rgb(36 42 69 / var(--tw-border-opacity));
+  border-color: rgb(36 42 69 / var(--tw-border-opacity, 1));
 }
 
 .focus\:border-secondary:focus {
   --tw-border-opacity: 1;
-  border-color: rgb(250 89 89 / var(--tw-border-opacity));
+  border-color: rgb(250 89 89 / var(--tw-border-opacity, 1));
 }
 
 .focus\:bg-white:focus {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .focus\:text-primary:focus {
   --tw-text-opacity: 1;
-  color: rgb(82 103 223 / var(--tw-text-opacity));
+  color: rgb(82 103 223 / var(--tw-text-opacity, 1));
 }
 
 .focus\:text-secondary:focus {
   --tw-text-opacity: 1;
-  color: rgb(250 89 89 / var(--tw-text-opacity));
+  color: rgb(250 89 89 / var(--tw-text-opacity, 1));
 }
 
 .focus\:outline-none:focus {
@@ -1228,7 +1228,7 @@ img {
 
 .focus\:invalid\:border-secondary:invalid:focus {
   --tw-border-opacity: 1;
-  border-color: rgb(250 89 89 / var(--tw-border-opacity));
+  border-color: rgb(250 89 89 / var(--tw-border-opacity, 1));
 }
 
 .active\:opacity-100:active {
@@ -1284,7 +1284,7 @@ img {
 
 .has-\[\:invalid\]\:bg-secondary:has(:invalid) {
   --tw-bg-opacity: 1;
-  background-color: rgb(250 89 89 / var(--tw-bg-opacity));
+  background-color: rgb(250 89 89 / var(--tw-bg-opacity, 1));
 }
 
 @media (min-width: 768px) {
@@ -1379,12 +1379,12 @@ img {
 
   .md\:border-secondary {
     --tw-border-opacity: 1;
-    border-color: rgb(250 89 89 / var(--tw-border-opacity));
+    border-color: rgb(250 89 89 / var(--tw-border-opacity, 1));
   }
 
   .md\:bg-secondary {
     --tw-bg-opacity: 1;
-    background-color: rgb(250 89 89 / var(--tw-bg-opacity));
+    background-color: rgb(250 89 89 / var(--tw-bg-opacity, 1));
   }
 
   .md\:bg-transparent {
@@ -1451,7 +1451,7 @@ img {
 
   .md\:text-neutral {
     --tw-text-opacity: 1;
-    color: rgb(36 42 69 / var(--tw-text-opacity));
+    color: rgb(36 42 69 / var(--tw-text-opacity, 1));
   }
 
   .after\:md\:w-full::after {
