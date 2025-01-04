@@ -30,7 +30,7 @@ menuOpenBtn.addEventListener("click", function () {
   // menuOpenBtn.setAttribute("aria-expanded", !expanded);
   menuCloseBtn.setAttribute("aria-expanded", true);
   menuOpenBtn.setAttribute("aria-expanded", true);
-  nav.classList.toggle("nav--open");
+  nav.classList.toggle("open");
   document.body.classList.toggle("no-scroll");
 });
 
@@ -41,14 +41,14 @@ menuCloseBtn.addEventListener("click", function () {
   // menuCloseBtn.setAttribute("aria-expanded", !expanded);
   menuOpenBtn.setAttribute("aria-expanded", false);
   menuCloseBtn.setAttribute("aria-expanded", false);
-  nav.classList.toggle("nav--open");
+  nav.classList.toggle("open");
   document.body.classList.remove("no-scroll");
 });
 
 // Function to close navigation when a link is clicked
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    nav.classList.remove("nav--open");
+    nav.classList.remove("open");
     menuCloseBtn.setAttribute("aria-expanded", false);
     document.body.classList.remove("no-scroll");
   });

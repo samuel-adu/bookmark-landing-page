@@ -25,7 +25,7 @@
           width="148"
           height="25"
           xmlns="http://www.w3.org/2000/svg"
-          class="logo relative z-20"
+          class="logo relative z-20 peer-[.open]:fill-white"
         >
           <g fill="none" fill-rule="evenodd">
             <path
@@ -43,12 +43,12 @@
           </g>
         </svg>
 
-        <nav id="nav" class="nav">
+        <nav id="nav" class="nav group peer">
           <button
             id="menu__open-btn"
             aria-controls="menu"
             aria-expanded="false"
-            class="menu__btn menu__open-btn relative z-20 md:hidden"
+            class="menu__btn menu__open-btn relative z-20 group-[.open]:hidden md:hidden"
           >
             <span class="sr-only">menu</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15">
@@ -64,7 +64,7 @@
             id="menu__close-btn"
             aria-controls="menu"
             aria-expanded="false"
-            class="menu__btn menu__close-btn relative z-20 md:hidden"
+            class="menu__btn menu__close-btn relative z-20 hidden group-[.open]:block md:hidden"
           >
             <span class="sr-only">menu</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15">
@@ -78,52 +78,54 @@
 
           <div
             id="menu"
-            class="menu fixed bottom-0 left-0 right-0 top-0 z-10 flex h-full flex-col justify-between bg-neutral pt-24 opacity-95 md:static md:bg-transparent md:pt-0"
+            class="menu fixed bottom-0 left-0 right-0 top-0 z-10 flex h-full -translate-y-full flex-col justify-between bg-neutral pt-24 opacity-95 group-[.open]:translate-y-0 md:static md:transform-none md:bg-transparent md:pt-0"
           >
             <ul
-              class="px-8 text-center md:flex md:items-center md:justify-center md:px-0"
+              class="list-none px-8 text-center md:flex md:items-center md:justify-center md:px-0"
             >
-              <li class="border-y border-white/15 px-5 py-6 md:px-6 md:py-3">
+              <li class="border-y border-white/15">
                 <a
                   href="#features"
-                  class="nav__link text-xl uppercase tracking-widest text-white hover:text-secondary focus:text-secondary md:text-sm md:text-neutral"
+                  class="nav__link inline-block w-full px-5 py-6 text-xl uppercase tracking-widest text-white no-underline hover:text-secondary focus:text-secondary focus:outline-none md:px-6 md:py-3 md:text-sm md:text-neutral"
                 >
                   Features
                 </a>
               </li>
-              <li class="border-b border-white/15 px-5 py-6 md:px-6 md:py-3">
+              <li class="border-b border-white/15">
                 <a
                   href="#faq"
-                  class="nav__link text-xl uppercase tracking-widest text-white hover:text-secondary focus:text-secondary md:text-sm md:text-neutral"
+                  class="nav__link inline-block w-full px-5 py-6 text-xl uppercase tracking-widest text-white no-underline hover:text-secondary focus:text-secondary focus:outline-none md:px-6 md:py-3 md:text-sm md:text-neutral"
                 >
                   Pricing
                 </a>
               </li>
-              <li class="border-b border-white/15 px-5 py-6 md:px-6 md:py-3">
+              <li class="border-b border-white/15">
                 <a
                   href="#contact"
-                  class="nav__link text-xl uppercase tracking-widest text-white hover:text-secondary focus:text-secondary md:text-sm md:text-neutral"
+                  class="nav__link inline-block w-full px-5 py-6 text-xl uppercase tracking-widest text-white no-underline hover:text-secondary focus:text-secondary focus:outline-none md:px-6 md:py-3 md:text-sm md:text-neutral"
                 >
                   Contact
                 </a>
               </li>
-              <li
-                class="mt-6 rounded border-2 border-white px-8 py-4 text-xl font-medium tracking-widest text-white hover:bg-white hover:text-secondary md:ml-6 md:mt-0 md:border-secondary md:bg-secondary md:py-2.5 md:text-sm"
-              >
-                <a href="#" class="nav__link uppercase">Login</a>
+              <li class="">
+                <a
+                  href="#"
+                  class="nav__link mt-6 inline-block w-full rounded border-2 border-white px-8 py-4 text-xl font-medium uppercase tracking-widest text-white no-underline hover:bg-white hover:text-secondary focus:bg-white focus:text-secondary focus:outline-none md:ml-6 md:mt-0 md:border-secondary md:bg-secondary md:py-2.5 md:text-sm"
+                  >Login</a
+                >
               </li>
             </ul>
 
             <ul
-              class="mb-12 flex items-center justify-center gap-10 px-8 text-center md:hidden"
+              class="mb-12 flex list-none items-center justify-center gap-10 px-8 text-center md:hidden"
             >
               <li>
-                <a href="#">
+                <a href="#" class="no-underline">
                   <img src="./images/icon-facebook.svg" alt="facebook" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" class="no-underline">
                   <img src="./images/icon-twitter.svg" alt="twitter" />
                 </a>
               </li>
@@ -135,9 +137,9 @@
 
     <main class="">
       <section class="relative mb-24 md:mb-36">
-        <div
+        <!-- <div
           class="absolute left-20 right-0 top-12 -z-10 h-44 rounded-l-full bg-primary"
-        ></div>
+        ></div> -->
         <div class="container">
           <div
             class="lg:flex lg:flex-row-reverse lg:items-center lg:justify-between"
@@ -166,13 +168,13 @@
               <div class="flex justify-center gap-4 lg:justify-start">
                 <a
                   href="#"
-                  class="inline-block rounded border-2 border-primary bg-primary px-4 py-2.5 text-sm text-white hover:bg-white hover:text-primary md:px-6"
+                  class="inline-block rounded border-2 border-primary bg-primary px-4 py-3 text-sm text-white no-underline hover:bg-white hover:text-primary focus:bg-white focus:text-primary focus:outline-none md:px-6"
                 >
                   Get it on Chrome
                 </a>
                 <a
                   href="#"
-                  class="inline-block rounded border-2 border-gray-100 bg-gray-100 px-4 py-2.5 text-sm text-neutral opacity-75 hover:border-neutral hover:bg-white hover:opacity-100"
+                  class="inline-block rounded border-2 border-gray-100 bg-gray-100 px-4 py-3 text-sm text-neutral no-underline opacity-75 hover:border-neutral hover:bg-white focus:border-neutral focus:bg-white focus:outline-none md:px-6"
                 >
                   Get it on Firefox
                 </a>
@@ -197,19 +199,19 @@
 
           <div class="mb-16 flex flex-col md:flex-row md:justify-center">
             <button
-              class="tab-link active border-y px-8 py-5 text-base text-neutral opacity-75 hover:text-secondary focus:text-secondary md:border-t-0"
+              class="tab-link active relative border-y px-8 py-5 text-base text-neutral opacity-75 after:absolute after:bottom-0 after:left-1/2 after:h-1 after:w-2/5 after:-translate-x-1/2 after:bg-secondary after:opacity-0 hover:text-secondary focus:text-secondary focus:outline-none active:opacity-100 active:after:opacity-100 md:border-t-0 after:md:w-full"
               data-tab="tab-1"
             >
               Simple Bookmarking
             </button>
             <button
-              class="tab-link active-tab border-y px-8 py-5 text-base text-neutral opacity-75 hover:text-secondary focus:text-secondary md:border-t-0"
+              class="tab-link relative border-y px-8 py-5 text-base text-neutral opacity-75 after:absolute after:bottom-0 after:left-1/2 after:h-1 after:w-2/5 after:-translate-x-1/2 after:bg-secondary after:opacity-0 hover:text-secondary focus:text-secondary focus:outline-none active:opacity-100 active:after:opacity-100 md:border-t-0 after:md:w-full"
               data-tab="tab-2"
             >
               Speedy Searching
             </button>
             <button
-              class="tab-link border-y px-8 py-5 text-base text-neutral opacity-75 hover:text-secondary focus:text-secondary md:border-t-0"
+              class="tab-link relative border-y px-8 py-5 text-base text-neutral opacity-75 after:absolute after:bottom-0 after:left-1/2 after:h-1 after:w-2/5 after:-translate-x-1/2 after:bg-secondary after:opacity-0 hover:text-secondary focus:text-secondary focus:outline-none active:opacity-100 active:after:opacity-100 md:border-t-0 after:md:w-full"
               data-tab="tab-3"
             >
               Easy Sharing
@@ -240,7 +242,7 @@
                   </p>
                   <a
                     href="#"
-                    class="inline-block rounded border-2 border-primary bg-primary px-4 py-2.5 text-white hover:bg-white hover:text-primary"
+                    class="inline-block rounded border-2 border-primary bg-primary px-6 py-3 text-sm text-white no-underline hover:bg-white hover:text-primary focus:bg-white focus:text-primary focus:outline-none"
                   >
                     More Info
                   </a>
@@ -271,7 +273,7 @@
                   </p>
                   <a
                     href="#"
-                    class="inline-block rounded border-2 border-primary bg-primary px-4 py-2.5 text-white hover:bg-white hover:text-primary"
+                    class="inline-block rounded border-2 border-primary bg-primary px-6 py-3 text-sm text-white no-underline hover:bg-white hover:text-primary focus:bg-white focus:text-primary focus:outline-none"
                   >
                     More Info
                   </a>
@@ -302,7 +304,7 @@
                   </p>
                   <a
                     href="#"
-                    class="inline-block rounded border-2 border-primary bg-primary px-4 py-2.5 text-white hover:bg-white hover:text-primary"
+                    class="inline-block rounded border-2 border-primary bg-primary px-6 py-3 text-white no-underline hover:bg-white hover:text-primary focus:bg-white focus:text-primary focus:outline-none"
                   >
                     More Info
                   </a>
@@ -341,7 +343,7 @@
               <img src="images/bg-dots.svg" alt="" class="mb-4" />
               <a
                 href="#"
-                class="inline-block w-full rounded border-2 border-primary bg-primary px-8 py-2.5 text-center text-sm text-white hover:bg-white hover:text-primary"
+                class="inline-block w-full rounded border-2 border-primary bg-primary px-9 py-3 text-center text-sm text-white no-underline hover:bg-white hover:text-primary focus:bg-white focus:text-primary focus:outline-none"
               >
                 Add & Install Extension
               </a>
@@ -358,7 +360,7 @@
               <img src="images/bg-dots.svg" alt="" class="mb-4" />
               <a
                 href="#"
-                class="inline-block w-full rounded border-2 border-primary bg-primary px-8 py-2.5 text-center text-sm text-white hover:bg-white hover:text-primary"
+                class="inline-block w-full rounded border-2 border-primary bg-primary px-9 py-3 text-center text-sm text-white no-underline hover:bg-white hover:text-primary focus:bg-white focus:text-primary focus:outline-none"
               >
                 Add & Install Extension
               </a>
@@ -375,7 +377,7 @@
               <img src="images/bg-dots.svg" alt="" class="mb-4" />
               <a
                 href="#"
-                class="inline-block w-full rounded border-2 border-primary bg-primary px-8 py-2.5 text-center text-sm text-white hover:bg-white hover:text-primary"
+                class="inline-block w-full rounded border-2 border-primary bg-primary px-9 py-3 text-center text-sm text-white no-underline hover:bg-white hover:text-primary focus:bg-white focus:text-primary focus:outline-none"
               >
                 Add & Install Extension
               </a>
@@ -393,25 +395,26 @@
               Frequently Asked Questions
             </h2>
             <p
-              class="mb-12 text-center text-base text-neutral opacity-50 xl:text-lg"
+              class="mb-16 text-center text-base text-neutral opacity-50 md:mb-14 xl:text-lg"
             >
               Here are some of our FAQs. If you have any other questions you’d
               like answered please feel free to email us.
             </p>
 
             <div class="mb-14">
-              <details open class="border-y pb-2 pt-4">
+              <details class="group border-b pb-2 pt-4 md:border-t">
                 <summary
-                  class="mb-2 flex items-center justify-between text-base text-neutral md:pr-4 xl:text-lg"
+                  class="group mb-2 flex cursor-pointer list-none items-center justify-between text-base text-neutral hover:text-secondary focus:text-secondary focus:outline-none md:pr-4 xl:text-lg"
                 >
                   What is Bookmark?
                   <svg
+                    class="inline group-open:rotate-180"
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
                     height="12"
-                    class="inline"
                   >
                     <path
+                      class="group-open:stroke-secondary group-hover:stroke-secondary"
                       fill="none"
                       stroke="#5267DF"
                       stroke-width="3"
@@ -426,18 +429,19 @@
                 </p>
               </details>
 
-              <details class="border-b pb-2 pt-4">
+              <details class="group border-b pb-2 pt-4">
                 <summary
-                  class="mb-2 flex items-center justify-between text-base text-neutral md:pr-4 xl:text-lg"
+                  class="group mb-2 flex cursor-pointer list-none items-center justify-between text-base text-neutral hover:text-secondary focus:text-secondary focus:outline-none md:pr-4 xl:text-lg"
                 >
                   How can I request a new browser?
                   <svg
+                    class="inline group-open:rotate-180"
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
                     height="12"
-                    class="inline"
                   >
                     <path
+                      class="group-open:stroke-secondary group-hover:stroke-secondary"
                       fill="none"
                       stroke="#5267DF"
                       stroke-width="3"
@@ -456,18 +460,19 @@
                 </p>
               </details>
 
-              <details class="border-b pb-2 pt-4">
+              <details class="group border-b pb-2 pt-4">
                 <summary
-                  class="mb-2 flex items-center justify-between text-base text-neutral md:pr-4 xl:text-lg"
+                  class="group mb-2 flex cursor-pointer list-none items-center justify-between text-base text-neutral hover:text-secondary focus:text-secondary focus:outline-none md:pr-4 xl:text-lg"
                 >
                   Is there a mobile app?
                   <svg
+                    class="inline group-open:rotate-180"
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
                     height="12"
-                    class="inline"
                   >
                     <path
+                      class="group-open:stroke-secondary group-hover:stroke-secondary"
                       fill="none"
                       stroke="#5267DF"
                       stroke-width="3"
@@ -484,18 +489,19 @@
                 </p>
               </details>
 
-              <details class="border-b pb-2 pt-4">
+              <details class="group border-b pb-2 pt-4">
                 <summary
-                  class="mb-2 flex items-center justify-between text-base text-neutral md:pr-4 xl:text-lg"
+                  class="group mb-2 flex cursor-pointer list-none items-center justify-between text-base text-neutral hover:text-secondary focus:text-secondary focus:outline-none md:pr-4 xl:text-lg"
                 >
                   What about other Chromium browsers?
                   <svg
+                    class="inline group-open:rotate-180"
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
                     height="12"
-                    class="inline"
                   >
                     <path
+                      class="group-open:stroke-secondary group-hover:stroke-secondary"
                       fill="none"
                       stroke="#5267DF"
                       stroke-width="3"
@@ -515,7 +521,7 @@
             <div class="align-center flex justify-center">
               <a
                 href="#"
-                class="mx-auto inline-block rounded border-2 border-primary bg-primary px-4 py-2.5 text-white hover:bg-white hover:text-primary"
+                class="mx-auto inline-block rounded border-2 border-primary bg-primary px-6 py-3 text-sm text-white no-underline hover:bg-white hover:text-primary focus:bg-white focus:text-primary focus:outline-none"
               >
                 More Info
               </a>
@@ -525,7 +531,7 @@
       </section>
     </main>
 
-    <aside class="scroll-m-36 bg-primary py-16" id="contact">
+    <aside class="scroll-m-36 bg-primary py-14 md:py-20" id="contact">
       <div class="container">
         <div class="md:mx-auto md:w-3/5 lg:w-1/2">
           <p
@@ -544,7 +550,7 @@
             class="novalidate flex flex-col items-center justify-center gap-4 md:flex-row md:items-start"
           >
             <div
-              class="relative w-full rounded-md border-2 border-secondary bg-secondary pb-1.5 md:w-2/3"
+              class="relative w-full rounded-md pb-6 has-[:invalid]:bg-secondary md:w-2/3"
             >
               <input
                 type="email"
@@ -552,21 +558,25 @@
                 name="email"
                 aria-describedby="email-error"
                 aria-label="email"
-                class="email-input mb-2 w-full rounded border-none px-5 py-2.5 text-base outline-none hover:border-none"
+                class="email-input peer w-full rounded-md border-2 px-5 py-3 text-sm text-neutral placeholder-slate-400 invalid:border-secondary invalid:text-secondary focus:border-neutral focus:outline-none focus:invalid:border-secondary"
                 placeholder="Enter your email address"
               />
               <span
                 aria-live="polite"
                 id="email-error"
-                class="error-message ml-4 text-xs font-medium italic text-white"
+                class="error-message absolute bottom-1 left-3 z-10 hidden text-xs font-medium italic text-white peer-invalid:block"
               >
                 Whoops! make sure it's an email
               </span>
-              <img src="./images/icon-error.svg" alt="" class="error-icon" />
+              <img
+                src="./images/icon-error.svg"
+                alt=""
+                class="error-icon absolute right-4 top-3 hidden peer-invalid:block"
+              />
             </div>
 
             <button
-              class="inline-block w-full rounded border-2 border-secondary bg-secondary px-5 py-2.5 text-center text-base text-white hover:border-secondary hover:bg-white hover:text-secondary md:w-1/3"
+              class="inline-block w-full rounded-md border-2 border-secondary bg-secondary px-5 py-3 text-center text-sm text-white hover:border-secondary hover:bg-white hover:text-secondary focus:border-secondary focus:bg-white focus:text-secondary focus:outline-none md:w-1/3"
             >
               Contact Us
             </button>
@@ -575,7 +585,7 @@
       </div>
     </aside>
 
-    <footer class="bg-neutral py-10 md:py-4">
+    <footer class="bg-neutral py-10 md:py-8">
       <div class="container items-center justify-between md:flex">
         <div
           class="flex flex-col items-center justify-center gap-8 md:flex-row"
@@ -585,12 +595,12 @@
           </div>
 
           <ul
-            class="mb-4 flex flex-col items-center justify-center gap-4 md:mb-0 md:flex md:flex-row md:gap-8"
+            class="mb-10 flex list-none flex-col items-center justify-center gap-4 md:mb-0 md:flex md:flex-row md:gap-8"
           >
             <li class="my-2">
               <a
                 href="#features"
-                class="text-sm uppercase text-white hover:text-secondary focus:text-secondary"
+                class="text-sm uppercase text-white hover:text-secondary focus:text-secondary focus:outline-none"
               >
                 Features
               </a>
@@ -598,14 +608,14 @@
             <li class="my-2">
               <a
                 href="#"
-                class="text-sm uppercase text-white hover:text-secondary focus:text-secondary"
+                class="text-sm uppercase text-white hover:text-secondary focus:text-secondary focus:outline-none"
                 >Pricing</a
               >
             </li>
             <li class="my-2">
               <a
                 href="#contact"
-                class="text-sm uppercase text-white hover:text-secondary focus:text-secondary"
+                class="text-sm uppercase text-white hover:text-secondary focus:text-secondary focus:outline-none"
               >
                 Contact
               </a>
@@ -613,11 +623,12 @@
           </ul>
         </div>
 
-        <ul class="flex items-center justify-center gap-10">
+        <ul class="flex list-none items-center justify-center gap-10">
           <li>
-            <a href="#">
+            <a href="#" class="group focus:outline-none">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                 <path
+                  class="group-hover:fill-secondary group-focus:fill-secondary"
                   fill="#FFF"
                   fill-rule="evenodd"
                   d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
@@ -626,9 +637,10 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" class="group focus:outline-none">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
                 <path
+                  class="group-hover:fill-secondary group-focus:fill-secondary"
                   fill="#FFF"
                   fill-rule="evenodd"
                   d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"
