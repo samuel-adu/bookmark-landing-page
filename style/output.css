@@ -1089,9 +1089,9 @@ img {
   max-width: 100%;
 }
 
-details:last-of-type summary::-webkit-details-marker {
+/* details:last-of-type summary::-webkit-details-marker {
   display: none;
-}
+} */
 
 .tab-link.active {
   opacity: 1;
