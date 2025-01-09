@@ -632,10 +632,6 @@ html {
   left: 0px;
 }
 
-.left-20 {
-  left: 5rem;
-}
-
 .left-3 {
   left: 0.75rem;
 }
@@ -652,16 +648,8 @@ html {
   top: 0px;
 }
 
-.top-12 {
-  top: 3rem;
-}
-
 .top-3 {
   top: 0.75rem;
-}
-
-.-z-10 {
-  z-index: -10;
 }
 
 .z-10 {
@@ -743,10 +731,6 @@ html {
   display: none;
 }
 
-.h-44 {
-  height: 11rem;
-}
-
 .h-full {
   height: 100%;
 }
@@ -814,11 +798,6 @@ html {
 
 .rounded-md {
   border-radius: 0.375rem;
-}
-
-.rounded-l-full {
-  border-top-left-radius: 9999px;
-  border-bottom-left-radius: 9999px;
 }
 
 .border-2 {
