@@ -1,19 +1,5 @@
 {
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
-    "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.8",
     "tailwindcss": "^3.4.17"
-  },
-  "scripts": {
-    "build": "npx tailwindcss -i ./input.css -o ./output.css --watch"
-  },
-  "name": "bookmark-landing-page",
-  "description": "![Design preview for the Bookmark landing page coding challenge](./design/desktop-preview.jpg)",
-  "version": "1.0.0",
-  "main": "main.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }
