@@ -7,7 +7,7 @@
     "tailwindcss": "^3.4.17"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ./style/input.css -o ./style/output.css --watch"
+    "build": "npx tailwindcss -i ./input.css -o ./output.css --watch"
   },
   "name": "bookmark-landing-page",
   "description": "![Design preview for the Bookmark landing page coding challenge](./design/desktop-preview.jpg)",
