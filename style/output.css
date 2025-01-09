@@ -652,12 +652,44 @@ html {
   top: 0.75rem;
 }
 
+.left-4 {
+  left: 1rem;
+}
+
+.left-16 {
+  left: 4rem;
+}
+
+.top-1\/4 {
+  top: 25%;
+}
+
+.top-\[\] {
+  top: ;
+}
+
+.top-\[10\%\] {
+  top: 10%;
+}
+
+.left-20 {
+  left: 5rem;
+}
+
+.bottom-1\/2 {
+  bottom: 50%;
+}
+
 .z-10 {
   z-index: 10;
 }
 
 .z-20 {
   z-index: 20;
+}
+
+.-z-10 {
+  z-index: -10;
 }
 
 .mx-auto {
@@ -735,6 +767,18 @@ html {
   height: 100%;
 }
 
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-2\/5 {
+  height: 40%;
+}
+
+.h-1\/4 {
+  height: 25%;
+}
+
 .w-\[280px\] {
   width: 280px;
 }
@@ -798,6 +842,20 @@ html {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-s-xl {
+  border-start-start-radius: 0.75rem;
+  border-end-start-radius: 0.75rem;
+}
+
+.rounded-s-full {
+  border-start-start-radius: 9999px;
+  border-end-start-radius: 9999px;
 }
 
 .border-2 {
