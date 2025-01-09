@@ -1068,7 +1068,7 @@ img {
   max-width: 100%;
 }
 
-details:last-of-type summary::-webkit-details-marker {
+details summary::-webkit-details-marker {
   display: none;
 }
 
