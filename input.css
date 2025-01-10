@@ -38,9 +38,6 @@ body.no-scroll {
   padding-inline: 2rem;
 }
 
-img {
-  max-width: 100%;
-}
 
 details summary::-webkit-details-marker {
   display: none;
