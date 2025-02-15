@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --clr-primary: hsl(231, 69%, 60%);
+  --clr-secondary: hsl(0, 94%, 66%);
+  --clr-neutral: hsl(229, 31%, 21%);
+}
+
+@layer base {
+  html {
+    font-family: "Rubik", sans-serif;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow: auto;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  padding-inline: 2rem;
+}
+
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+.tab-link.active {
+  opacity: 1;
+}
+
+.tab-link.active::after {
+  opacity: 1;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@media (min-width: 48em) {
+  .container {
+    width: 90%;
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+}
+
+@media (min-width: 80em) {
+  .container {
+    max-width: 1110px;
+  }
+}
