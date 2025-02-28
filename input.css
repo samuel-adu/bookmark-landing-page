@@ -38,7 +38,6 @@ body.no-scroll {
   padding-inline: 2rem;
 }
 
-
 details summary::-webkit-details-marker {
   display: none;
 }
@@ -67,4 +66,38 @@ details summary::-webkit-details-marker {
   .container {
     max-width: 1110px;
   }
+}
+
+.hero__img {
+  position: relative;
+}
+
+.hero__img::after {
+  content: "";
+  background-color: var(--clr-primary);
+  width: 300%;
+  height: 80%;
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  z-index: -1;
+  border-top-left-radius: 350px;
+  border-bottom-left-radius: 350px;
+}
+
+.feature__img {
+  position: relative;
+}
+
+.feature__img::before {
+  content: "";
+  background-color: var(--clr-primary);
+  width: 300%;
+  height: 80%;
+  position: absolute;
+  right: 25%;
+  top: 30%;
+  z-index: -1;
+  border-top-right-radius: 350px;
+  border-bottom-right-radius: 350px;
 }
