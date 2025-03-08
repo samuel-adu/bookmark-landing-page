@@ -134,13 +134,15 @@
       </div>
     </header>
 
-    <main class="">
+    <main class="overflow-hidden">
       <section class="relative mb-24 md:mb-36">
         <div class="container">
           <div
             class="lg:flex lg:flex-row-reverse lg:items-center lg:justify-between"
           >
-            <div class="mb-12 flex items-center justify-center lg:mb-0">
+            <div
+              class="hero__img relative mb-24 flex items-center justify-center after:absolute after:left-1/4 after:top-1/4 after:-z-10 after:h-4/5 after:w-[300%] after:rounded-full after:bg-primary md:mb-36 lg:mb-0"
+            >
               <img
                 src="./images/illustration-hero.svg"
                 alt=""
@@ -150,7 +152,7 @@
 
             <div class="text-center lg:w-1/2 lg:text-left">
               <h1
-                class="mb-4 text-3xl font-medium text-neutral md:text-4xl xl:text-5xl"
+                class="headi mb-4 text-3xl font-medium text-neutral md:text-4xl xl:text-5xl"
               >
                 A Simple Bookmark Manager
               </h1>
@@ -180,7 +182,7 @@
         </div>
       </section>
 
-      <section class="mb-24 scroll-m-24 md:mb-36" id="features">
+      <section class="mb-24 scroll-m-24 md:mb-36 lg:mb-60" id="features">
         <div class="container">
           <div class="mx-auto text-center lg:w-1/2">
             <h2 class="mb-4 text-2xl text-neutral md:text-3xl xl:text-4xl">
@@ -217,7 +219,9 @@
           <div class="relative">
             <div id="tab-1" class="active tab-content hidden">
               <div class="lg:flex lg:items-center lg:justify-between">
-                <div class="mb-16 lg:mb-0">
+                <div
+                  class="relative mb-16 before:absolute before:right-1/4 before:top-[15%] before:-z-10 before:h-full before:w-[300%] before:rounded-full before:bg-primary sm:mb-36 lg:mb-0 lg:before:top-1/4"
+                >
                   <img
                     src="images/illustration-features-tab-1.svg"
                     alt=""
@@ -248,7 +252,9 @@
 
             <div id="tab-2" class="tab-content hidden">
               <div class="lg:flex lg:items-center lg:justify-between">
-                <div class="mb-16 lg:mb-0">
+                <div
+                  class="relative mb-16 before:absolute before:right-1/4 before:top-[15%] before:-z-10 before:h-full before:w-[300%] before:rounded-full before:bg-primary sm:mb-36 lg:mb-0 lg:before:top-1/4"
+                >
                   <img
                     src="images/illustration-features-tab-2.svg"
                     alt=""
@@ -279,7 +285,9 @@
 
             <div id="tab-3" class="tab-content hidden">
               <div class="lg:flex lg:items-center lg:justify-between">
-                <div class="mb-16 lg:mb-0">
+                <div
+                  class="relative mb-16 before:absolute before:right-1/4 before:top-[15%] before:-z-10 before:h-full before:w-[300%] before:rounded-full before:bg-primary sm:mb-36 lg:mb-0 lg:before:top-1/4"
+                >
                   <img
                     src="images/illustration-features-tab-3.svg"
                     alt=""
@@ -328,55 +336,61 @@
           <div
             class="flex flex-col items-center justify-center gap-8 lg:flex-row"
           >
-            <div
-              class="flex w-[280px] flex-col items-center justify-center rounded-md px-6 pb-6 pt-8 shadow-md lg:mb-20"
-            >
-              <img src="images/logo-chrome.svg" alt="" class="mb-8" />
-              <h3 class="text-xl font-medium text-neutral">Add to Chrome</h3>
-              <p class="mb-8 text-sm text-neutral opacity-50">
-                Minimum version 62
-              </p>
-              <img src="images/bg-dots.svg" alt="" class="mb-4" />
-              <a
-                href="#"
-                class="inline-block w-full rounded border-2 border-primary bg-primary px-9 py-3 text-center text-sm text-white no-underline hover:bg-white hover:text-primary focus:bg-white focus:text-primary focus:outline-none"
-              >
-                Add & Install Extension
-              </a>
+            <div class="w-[280px] rounded-md shadow-md lg:mb-20">
+              <div class="flex flex-col items-center justify-center pb-6 pt-12">
+                <img src="images/logo-chrome.svg" alt="" class="mb-8" />
+                <h3 class="text-xl font-medium text-neutral">Add to Chrome</h3>
+                <p class="text-sm text-neutral opacity-50">
+                  Minimum version 62
+                </p>
+              </div>
+              <img src="images/bg-dots.svg" alt="" />
+              <div class="p-6">
+                <a
+                  href="#"
+                  class="inline-block w-full rounded border-2 border-primary bg-primary px-9 py-3 text-center text-sm text-white no-underline hover:bg-white hover:text-primary focus:bg-white focus:text-primary focus:outline-none"
+                >
+                  Add & Install Extension
+                </a>
+              </div>
             </div>
 
-            <div
-              class="flex w-[280px] flex-col items-center justify-center rounded-md px-6 pb-6 pt-8 shadow-md lg:my-10"
-            >
-              <img src="images/logo-firefox.svg" alt="" class="mb-8" />
-              <h3 class="text-xl font-medium text-neutral">Add to Firefox</h3>
-              <p class="text-neuttral mb-8 text-sm opacity-50">
-                Minimum version 55
-              </p>
-              <img src="images/bg-dots.svg" alt="" class="mb-4" />
-              <a
-                href="#"
-                class="inline-block w-full rounded border-2 border-primary bg-primary px-9 py-3 text-center text-sm text-white no-underline hover:bg-white hover:text-primary focus:bg-white focus:text-primary focus:outline-none"
-              >
-                Add & Install Extension
-              </a>
+            <div class="w-[280px] rounded-md shadow-md lg:my-10">
+              <div class="flex flex-col items-center justify-center pb-6 pt-12">
+                <img src="images/logo-firefox.svg" alt="" class="mb-8" />
+                <h3 class="text-xl font-medium text-neutral">Add to Firefox</h3>
+                <p class="text-sm text-neutral opacity-50">
+                  Minimum version 55
+                </p>
+              </div>
+              <img src="images/bg-dots.svg" alt="" />
+              <div class="p-6">
+                <a
+                  href="#"
+                  class="inline-block w-full rounded border-2 border-primary bg-primary px-9 py-3 text-center text-sm text-white no-underline hover:bg-white hover:text-primary focus:bg-white focus:text-primary focus:outline-none"
+                >
+                  Add & Install Extension
+                </a>
+              </div>
             </div>
 
-            <div
-              class="flex w-[280px] flex-col items-center justify-center rounded-md px-6 pb-6 pt-8 shadow-md lg:mt-20"
-            >
-              <img src="images/logo-opera.svg" alt="" class="mb-8" />
-              <h3 class="text-xl font-medium text-neutral">Add to Opera</h3>
-              <p class="mb-8 text-sm text-neutral opacity-50">
-                Minimum version 46
-              </p>
-              <img src="images/bg-dots.svg" alt="" class="mb-4" />
-              <a
-                href="#"
-                class="inline-block w-full rounded border-2 border-primary bg-primary px-9 py-3 text-center text-sm text-white no-underline hover:bg-white hover:text-primary focus:bg-white focus:text-primary focus:outline-none"
-              >
-                Add & Install Extension
-              </a>
+            <div class="w-[280px] rounded-md shadow-md lg:mt-20">
+              <div class="flex flex-col items-center justify-center pb-6 pt-12">
+                <img src="images/logo-opera.svg" alt="" class="mb-8" />
+                <h3 class="text-xl font-medium text-neutral">Add to Opera</h3>
+                <p class="text-sm text-neutral opacity-50">
+                  Minimum version 46
+                </p>
+              </div>
+              <img src="images/bg-dots.svg" alt="" />
+              <div class="p-6">
+                <a
+                  href="#"
+                  class="inline-block w-full rounded border-2 border-primary bg-primary px-9 py-3 text-center text-sm text-white no-underline hover:bg-white hover:text-primary focus:bg-white focus:text-primary focus:outline-none"
+                >
+                  Add & Install Extension
+                </a>
+              </div>
             </div>
           </div>
         </div>
