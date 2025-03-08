@@ -861,26 +861,6 @@ html {
   background-color: rgb(250 89 89 / var(--tw-bg-opacity, 1));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
-}
-
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity, 1));
-}
-
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
-}
-
-.bg-yellow-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(202 138 4 / var(--tw-bg-opacity, 1));
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -958,24 +938,16 @@ html {
   padding-bottom: 1.5rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .pt-24 {
   padding-top: 6rem;
 }
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
-}
-
-.pb-12 {
-  padding-bottom: 3rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
 }
 
 .text-center {
@@ -1138,11 +1110,6 @@ details summary::-webkit-details-marker {
 .before\:right-1\/4::before {
   content: var(--tw-content);
   right: 25%;
-}
-
-.before\:top-1\/4::before {
-  content: var(--tw-content);
-  top: 25%;
 }
 
 .before\:top-\[15\%\]::before {
@@ -1547,26 +1514,6 @@ details summary::-webkit-details-marker {
   .md\:text-neutral {
     --tw-text-opacity: 1;
     color: rgb(36 42 69 / var(--tw-text-opacity, 1));
-  }
-
-  .md\:before\:top-1\/4::before {
-    content: var(--tw-content);
-    top: 25%;
-  }
-
-  .md\:before\:top-\[15\%\]::before {
-    content: var(--tw-content);
-    top: 15%;
-  }
-
-  .md\:before\:top-\[\]::before {
-    content: var(--tw-content);
-    top: ;
-  }
-
-  .md\:before\:top-\[10\%\]::before {
-    content: var(--tw-content);
-    top: 10%;
   }
 
   .after\:md\:w-full::after {
